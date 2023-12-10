@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background-image: url(images/bgpicweb.jpg);
+    background-size: 100%;
+}
+.frontpage-container{
+    position: relative;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 40px;
+    width: 80%;
+    height: fit-content;
+    left: 10%;
+    top: 60px;
+    padding: 20px;
+}
+.link{
+    font-family: Verdana;
+    float: right;
+    color: white;  
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 0;
+    transition: 0.5s;
+}
+a:hover{
+    color: cyan;
+}
+h1{
+    font-family: Georgia;
+    font-size: 100px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+#ebc{
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 24px;
+    font-family: 'Courier New';
+}
+h2{
+    color: white;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+img{
+    border-radius: 20px;
+    position: relative;
+    background-origin: padding-box;
+    margin-left: 20px;
+}
+.beaches{
+    position: relative;
+    margin-top: 100px;
+}
+#explore{
+    left: 47%;
+    background-size: 50px;
+    border: solid skyblue;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 18px;
+    padding: 5px 20px;
+    color: white;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+#explore:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    z-index: -1;
+    transition: left 0.3s ease-in-out;
+  }
+
+#explore:hover::before {
+    left: 0;
+  }
